@@ -153,7 +153,7 @@ padding: 200px 0px;
     background-image: url(../images/hero-img.jpg);
         background-repeat: no-repeat;
         background-position: center;
-        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        
         
 }
 
@@ -165,7 +165,6 @@ padding: 200px 0px;
     justify-content: center;
    margin-bottom: 112px;
    margin: 0 auto;
-   
    
 
 }
@@ -300,7 +299,7 @@ justify-content: center;
 
 /*section four*/
 .container-comand {
-    background: #F5F4FA;
+    
 }
 .li-comand {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -327,17 +326,19 @@ margin-top: 16px;
    border-radius: 50%;
     
 }
-.four-link:hover {
+.four-link:hover, :focus {
     background-color: #2196F3;
 }
-.four-link:hover .four-icon {
+.four-link:hover , :focus .four-icon {
     fill: #FFFFFF;
 }
 .four-icon {
 fill: #AFB1B8;
 }
 
-
+.four {
+background: #F5F4FA;
+}
 .container-four {
     display: flex;
     justify-content: center;
@@ -391,9 +392,10 @@ display: flex;
 background: #F5F5F5;
 }
 
-.client-link:hover .client-icon{
+.client-link:hover ,
+:focus .client-icon{
     fill: #2196F3;
-    
+  
 }
 
 .client-icon {
@@ -454,8 +456,9 @@ background: #F5F5F5;
 margin-left: 70px;
 }
 
-.ul-footer {
+.div-footer {
     display: flex;
+    align-items: baseline;
 }
 
 .li-footer{ 
@@ -489,7 +492,7 @@ width: 44px;
 background: rgba(255, 255, 255, 0.1);
 border-radius: 50%;
 }
-.footer-link:hover {
+.footer-link:hover , :focus {
     background:#2196F3;
 
 }
@@ -535,7 +538,7 @@ border: 1px solid #eee;
      font-weight: 500;
       font-size: 16px;
       line-height: 1.6;
-    border-radius: 4px;
+    
     letter-spacing: 0.03em;
     
   
@@ -545,7 +548,7 @@ border: 1px solid #eee;
 .portfolio-button:hover { 
     background: #2196F3;
     color: #FFFFFF;
-   
+border-radius: 4px;
 }
 .class-button {
     
