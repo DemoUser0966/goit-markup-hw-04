@@ -45,7 +45,7 @@ ul {
     border-bottom: 1px solid #ECECEC
 }
 .header-container {
-    height: 75px;
+ height: 75px;
 display: flex;
 align-items: center;
 gap: 93px;
@@ -65,17 +65,9 @@ gap:  93px;
 .header-menu {
 display: flex;
 gap: 50px;
+align-items: center;
+}
 
-}
-.head-logo {
-    display: flex;
-    position: absolute;
-       
-    align-items: center;
-    width: 16px;
-    height: 12px;
-   
-}
 .head {
     color: #212121;
     text-decoration: none;
@@ -88,6 +80,10 @@ gap: 50px;
             justify-content: center;
             
 }
+.head:hover{
+    color: #2196F3;
+    background-color: #FFFFFF;
+}
 .head-net {
     font-weight: 500;
         font-size: 14px;
@@ -95,31 +91,20 @@ gap: 50px;
         letter-spacing: 0.02em;
         text-decoration: none;
         color: #757575;
+        display: flex;
+        
+               
 }
-.head-net:hover{
+.head-net:hover {
     color: #2196F3;
-}
-.header-item {
-    width: 16px;
-}
-.head-link {
-    width: 16px;
-    height: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    margin-left: 25px;
-   fill: #757575;
-}
-.head-link:hover {
     fill: #2196F3;
 }
-
-.head:hover{
-    color:#2196F3;
+.head-icon {
+    height: 16px;
+    width: 16px;
+    fill: #757575;
+    margin-right: 10px;
 }
-
 .header-name {
     font-family: 'Raleway';
         font-weight: 700;
@@ -139,20 +124,25 @@ gap: 50px;
 
 .nomber {
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-    text-decoration: none;
-        color: #757575;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            color: #757575;
+           
+            padding-top: 32px;
        
 }
 
 /*hero title*/
 .hero {
 padding: 200px 0px;
-    background-image: url(../images/hero-img.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
+background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+     url(../images/hero-img.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
         
         
 }
@@ -324,12 +314,14 @@ margin-top: 16px;
     justify-content: center;
    background-color: #FFFFFF;
    border-radius: 50%;
-    
+   
 }
-.four-link:hover, :focus {
+.four-link:hover ,
+.four-link:focus .four-icon {
     background-color: #2196F3;
 }
-.four-link:hover , :focus .four-icon {
+.four-icon:hover ,
+.four-icon :focus  {
     fill: #FFFFFF;
 }
 .four-icon {
@@ -389,17 +381,22 @@ display: flex;
     justify-content: center;
     border: 1px solid #AFB1B8;
   border-radius: 4px;
-background: #F5F5F5;
+
 }
 
 .client-link:hover ,
-:focus .client-icon{
+.client-link:focus .client-icon{
     fill: #2196F3;
-  
+  background-color: #FFFFFF;
+  border-color: #2196F3;
 }
 
 .client-icon {
-    fill: #AFB1B8;
+        fill: #AFB1B8;
+}
+.client-icon:hover,
+.client-icon:focus {
+fill: #2196F3;
 }
 
 /*footer*/
