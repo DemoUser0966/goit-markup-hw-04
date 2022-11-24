@@ -80,7 +80,7 @@ align-items: center;
             justify-content: center;
             
 }
-.head:hover{
+.head:hover, .head:focus{
     color: #2196F3;
     background-color: #FFFFFF;
 }
@@ -95,7 +95,7 @@ align-items: center;
         
                
 }
-.head-net:hover {
+.head-net:hover, .head-net:focus  {
     color: #2196F3;
     fill: #2196F3;
 }
@@ -317,15 +317,19 @@ margin-top: 16px;
    
 }
 .four-link:hover,
-.four-link:focus .four-icon {
+.four-link:focus {
     background-color: #2196F3;
 }
-.four-link:hover,
+.four-link:hover .four-icon,
 .four-link:focus .four-icon  {
     fill: #FFFFFF;
+    
 }
 .four-icon {
 fill: #AFB1B8;
+}
+.four-icon:hover,.four-icon:focus {
+fill: fefefe;
 }
 
 .four {
@@ -539,7 +543,7 @@ border: 1px solid #eee;
     
     letter-spacing: 0.03em;
     border-radius: 4px;
-    border-color: #FFFFFF;
+   border: 0cm;
   
     
 }
@@ -548,7 +552,7 @@ border: 1px solid #eee;
 .portfolio-button:focus { 
     background: #2196F3;
     color: #FFFFFF;
-    border-color: #fefefe;
+   
 
 
 }
